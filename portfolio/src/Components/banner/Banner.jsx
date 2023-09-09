@@ -66,6 +66,8 @@ import "./Banner.css";
 
    return (
      <div className="banner-container">
+      
+       <section className="banner" id="home">
        <section className="svg-background">
        <img src={Reactic} alt="Reactic" className="icon icon-react" />
        <img src={Reactic} alt="Reactic" className="icon icon-reactR" />
@@ -79,7 +81,6 @@ import "./Banner.css";
          <img src={java} alt="javascript" className="icon icon-java" />
       
        </section>
-       <section className="banner" id="home">
          <Container>
            <Row className="align-items-center">
              <Col xs={12} md={6} xl={7}>

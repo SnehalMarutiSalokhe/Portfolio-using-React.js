@@ -1,12 +1,5 @@
 
-.banner-container {
-    position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  }
+
 
   .text-conteiner {
     position: relative;
@@ -34,7 +27,7 @@
     font-size: 1.30rem;
 }
 
-.banner h1 {
+.banner h1 { 
     font-size: 3rem;
     letter-spacing: 0.05rem; 
     line-height: 1;
@@ -65,13 +58,12 @@
   /*svg icons styling*/
 
 .svg-background {
-    /* position: fixed; */
     top: 20vh;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
     pointer-events: none;
+  
   }
   
   .icon {
@@ -80,6 +72,7 @@
     height: 50px;
     animation: updown 7s linear infinite;  
     pointer-events: none;
+    z-index: 1;
   }
   
   .icon-react {
@@ -132,8 +125,7 @@
   .icon-java {
     top: 70vh;
     right: 30vw;
-  
-  }
+   }
   
   .icon-vscode {
     top: 60vh;
