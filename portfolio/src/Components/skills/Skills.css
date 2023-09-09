@@ -14,13 +14,17 @@
       font-size: 45px;
       font-weight: 700;
   }
+  
+ 
   .skill p {
       color: #B8B8B8;
       font-size: 18px;
       letter-spacing: 0.8px;
       line-height: 1.5em;
-      margin: 14px 0 75px 0;
-  }
+      margin: 15px 10px 70px 10px;
+      justify-content: center;
+      text-align: center;
+  } 
   .skill-slider {
     width: 80%;
     margin: 0 auto;

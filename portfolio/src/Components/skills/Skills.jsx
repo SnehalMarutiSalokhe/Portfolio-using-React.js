@@ -1,5 +1,5 @@
-import './Skills.css';
-import {Container, Col, Row } from "react-bootstrap";
+import "./Skills.css";
+import { Container, Col, Row } from "react-bootstrap";
 import meter1 from "../../assets/img/meter1.svg";
 import meter2 from "../../assets/img/meter2.svg";
 import meter3 from "../../assets/img/meter3.svg";
@@ -7,7 +7,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../../assets/img/color-sharp.png";
 
- const Skills = () => {
+const Skills = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -30,42 +30,56 @@ import colorSharp from "../../assets/img/color-sharp.png";
 
   return (
     <div>
-        
       <section className="skill">
         <Container>
-        {/* <img className="background-image-left" src={colorSharp} alt="arroimg" /> */}
-        <img className="background-image-right" src={colorSharp} alt="arroimg" />
+          {/* <img className="background-image-left" src={colorSharp} alt="arroimg" /> */}
+          <img
+            className="background-image-right"
+            src={colorSharp}
+            alt="arroimg"
+          />
 
           <Row>
             <Col>
-              <div className ="skill-bx wow zoomIn">
+              <div className="skill-bx wow zoomIn">
                 <h2>Skills</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid error quia quaerat reiciendis, perferendis, reprehenderit quo consectetur vero minus, suscipit officia. Accusantium fuga totam debitis, incidunt necessitatibus itaque id. Eius!</p>
-                <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="skillMtr" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="skillMtr" />
-                                <h5>Competative Programming</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="skillMtr" />
-                                <h5>computer science fundamentals</h5>
-                            </div>
-                           
-                            <div className="item">
-                                <img src={meter1} alt="skillMtr" />
-                                <h5>Technical Content Writting</h5>
-                            </div>
-                        </Carousel>
 
-                </div> 
+                <p>
+                  I possess a strong proficiency in programming, particularly
+                  in C++ and C, where I have earned recognition with a Golden
+                  Badge in C and a Silver Badge in C++. I excel in
+                  problem-solving and hold a solid foundation in computer
+                  science fundamentals. Additionally, I am skilled in web
+                  development, with expertise in React.js, enabling me to create
+                  responsive and user-friendly web applications. 
+                </p>
+                <Carousel
+                  responsive={responsive}
+                  infinite={true}
+                  className="owl-carousel owl-theme skill-slider"
+                >
+                  <div className="item">
+                    <img src={meter1} alt="skillMtr" />
+                    <h5>Web Development</h5>
+                  </div>
+                  <div className="item">
+                    <img src={meter2} alt="skillMtr" />
+                    <h5>Competative Programming</h5>
+                  </div>
+                  <div className="item">
+                    <img src={meter3} alt="skillMtr" />
+                    <h5>computer science fundamentals</h5>
+                  </div>
+
+                  <div className="item">
+                    <img src={meter1} alt="skillMtr" />
+                    <h5>Technical Content Writting</h5>
+                  </div>
+                </Carousel>
+              </div>
             </Col>
           </Row>
         </Container>
-      
       </section>
     </div>
   );
