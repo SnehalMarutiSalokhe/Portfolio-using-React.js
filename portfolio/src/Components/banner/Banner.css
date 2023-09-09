@@ -1,0 +1,172 @@
+
+.banner-container {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  }
+
+  .text-conteiner {
+    position: relative;
+    z-index: 1; 
+  }
+
+ .banner {
+    margin-top: 0;
+    padding: 16.25rem 0 6.25rem 0; 
+    background: url('../../assets/img/banner-bg.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.05rem; 
+    padding: 0.5rem 0.625rem; 
+    background: linear-gradient(90.21deg rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.5); 
+    margin-bottom: 1rem; 
+    display: inline-block;
+    font-size: 1.30rem;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    letter-spacing: 0.05rem; 
+    line-height: 1;
+    margin-bottom: 1.25rem; 
+    display: block;
+}
+
+.banner p {
+    color: #B8B8B8;
+    font-size: 1.125rem; 
+    letter-spacing: 0.05rem; 
+    line-height: 1.5em;
+    width: 96%; 
+
+}
+
+.banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem; 
+    margin-top: 3.75rem; 
+    letter-spacing: 0.05rem; 
+    display: flex;
+    align-items: center;
+}
+
+
+  /*svg icons styling*/
+
+.svg-background {
+    /* position: fixed; */
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: updown 7s linear infinite;  
+    pointer-events: none;
+  }
+  
+  .icon-react {
+    top: 40vh;
+    right: 5vw;
+ 
+  }
+
+  .icon-reactR {
+    top: 15vh;
+    left: 10vw;
+  
+  }
+  
+  .icon-css {
+    top: 20vh;
+    right: 10vw;
+   
+
+  }
+  
+  .icon-html {
+    top: 25vh;
+    right:23vw;
+    z-index: 2;
+  }
+  
+  .icon-code {
+    top: 40vh;
+    right: 10vw;
+  }
+  
+  .icon-github {
+    top: 50vh;
+    left: 5vw;
+
+  }
+  
+  .icon-leetcode {
+    top: 28vh;
+    left: 28vw;
+   
+  }
+
+  .icon-javascript {
+    top: 80vh;
+    right: 40vw;
+  
+  }
+  .icon-java {
+    top: 70vh;
+    right: 30vw;
+  
+  }
+  
+  .icon-vscode {
+    top: 60vh;
+    left: 75vw;
+  }
+  
+
+
+
+  
+.banner button svg {
+    font-size: 1.5625rem; 
+    margin-left: 0.625rem; 
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.banner button:hover svg {
+    margin-left: 1.6rem; 
+}
+
+.banner img {
+    animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-1.25rem); 
+    }
+    50% {
+        transform: translateY(1.25rem); 
+    }
+    100% {
+        transform: translateY(-1.25rem); 
+    }
+}
