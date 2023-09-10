@@ -3,6 +3,8 @@
 import "./Exp.css";
 import { Steps } from 'antd';
 
+import colorSharp from "../../assets/img/color-sharp.png";
+
 
 import * as React from 'react';
 import SwipeableViews from 'react-swipeable-views';
@@ -13,8 +15,8 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-const titleColor = 'White'; // Change this to your desired title color
-const descriptionColor = 'gray'; // Change this to your desired description color
+const titleColor = 'White'; 
+const descriptionColor = 'gray'; 
 
 
 
@@ -66,7 +68,9 @@ export default function Exp() {
     setValue(index);
   };
   return (
-    <div>
+    <div className =".Exp-container">
+      <img className="Exp-image-left" src={colorSharp} alt="colorsharp" />
+
        <div className ="Exp">
           <Steps current={2} percent={60}>
             <Steps.Step
@@ -87,7 +91,8 @@ export default function Exp() {
 
   <div className="Exp-detail">
 
-  <Box sx={{ bgcolor: 'gray', width: 500 }}>
+  {/* <Box sx={{  width: auto }} className = "Exp-bg"> */}
+  <Box  className = "Exp-bg">
       <AppBar position="static">
         <Tabs
           value={value}
@@ -111,6 +116,7 @@ export default function Exp() {
           <h5>Content Writer</h5>
             <p>GeeksforGeeks</p>
             <p>Apr 2023 - Jul 2023 (3 months)</p>
+            <p><big> <u>Skill:</u></big> Computer sciennce Fundamentals</p>
             <p>During this time period, I wrote some articles for the GeeksforGeeks website.</p>
 
           </TabPanel>
@@ -119,20 +125,30 @@ export default function Exp() {
             <h5>Web Developer</h5>
             <p>CodeClause</p>
             <p>May 2023 - Jun 2023 (2 months)</p>
-          </TabPanel>
-          <TabPanel value={value} index={2} dir={theme.direction}>
-           
+            <p><big> <u>Skill:</u></big> HTML,CSS,JavaScript</p>
 
+            <p>I worked as web development Intern.</p>
+
+          </TabPanel>
+          <TabPanel value={value} index={2} dir={theme.direction}>      
 
             <h5>Software Trainee</h5>
             <p>Collab Vision Infosolutions</p>
             <p>Jul 2023 - Present (1 month)</p>
+            <p><big> <u>Skill:</u></big> React.js , HTML,CSS,JavaScript </p>
+
+            <p>I worked as a React developer intern</p>
+
           </TabPanel>
 
       </SwipeableViews>
+
     </Box>
-    
+  {/* <img className="Exp-image-left" src={colorSharp} alt="colorsharp" />  */}
   </div>
+
+  {/* <img className="Exp-image-left" src={colorSharp} alt="colorsharp" /> */}
+
     </div>
   )
 }

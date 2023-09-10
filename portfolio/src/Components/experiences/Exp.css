@@ -1,18 +1,33 @@
+
+.Exp-container{
+    top: 20%;
+    padding: 10%;
+}
+
+
+.Exp-image-left {
+    top: 70%;
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    left: 0;
+    z-index: -4;
+    padding: 0;
+ }
+ 
 .Exp{
     width :80%;
     align-items: center;
     margin: 10%;
     text-align: center;
+     z-index: 1;
 }
 
 .Exp-detail{
-    width :80%;
+    width :60%;
     align-items: center;
-    margin: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
-}
-
-.TabPanel {
-    color: black;
-
-}
+    padding-bottom: 15%;
+ }

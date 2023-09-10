@@ -15,9 +15,9 @@ function App() {
     <NavigationBar/>
     <GoToTop/>
     <Banner/>
-    <Skills/>
-    <Edu/>
+    <Skills/>   
     <Exp/>
+     <Edu/>
     </div>
   );
 }
