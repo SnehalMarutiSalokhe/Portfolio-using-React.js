@@ -19,16 +19,21 @@
 }
 
 
-
 .Education__container {
-
-   display: flex;   
-   border: 2px solid white; 
-   border-radius: 10px; 
-   box-shadow: 0 0 0.25rem rgba(255, 255, 255, 0.5); 
-   
- 
+    display: flex;
+    flex-direction: row; 
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 0.25rem rgba(255, 255, 255, 0.5);
+    padding: 2%;
 }
+
+@media (max-width: 768px) {
+    .Education__container {
+        flex-direction: column; 
+    }
+}
+
 
 .timeline{
     
