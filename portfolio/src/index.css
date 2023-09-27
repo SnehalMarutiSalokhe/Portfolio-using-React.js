@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*----------  google form  ------*/
+
+
+/* Variables css */
+:root {
+  /* =======colors======== */
+  --first-color: hsl(353, 100%, 65%);
+ --title-color:hsl(244, 24%, 26%);
+--text-color: hsl(244, 16%, 43%);
+--body-color: Ihsl(258, 60%, 98%);
+/* --container-color:#fff; */
+
+
+/*========== Font and Typography
+/*.5rem = 8px
+| 1rem 16px ...*/
+
+--body-font: 'Rubik', sans-serif;
+--h1-font-size: 2.25rem;
+--h2-font-size: 1.5rem;
+--h3-font-size: 1.25rem;
+--normal-font-size: 1rem;
+--small-font-size: 0.rem;
+
+}

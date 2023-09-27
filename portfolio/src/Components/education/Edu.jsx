@@ -1,121 +1,101 @@
 
 import * as React from 'react';
+import "./Edu.css";
+import Card   from "./Card";
 
-import Box from '@mui/material/Box';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import StepContent from '@mui/material/StepContent';
-import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-
-
-
-
-
-const MainSteps = [
-    'Select master blaster campaign settings',
-    'Create an ad group',
-    'Create an ad',
-  ];
-  
-
-
-
-const steps = [
-  {
-    label: 'Select campaign settings',
-    description: `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`,
-  },
-  {
-    label: 'Create an ad group',
-    description:
-      'An ad group contains one or more ads which target a shared set of keywords.',
-  },
-  {
-    label: 'Create an ad',
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
-  },
-];
 
 export default function Edu() {
-  const [activeStep, setActiveStep] = React.useState(0);
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleReset = () => {
-    setActiveStep(0);
-  };
+    
+    const Data = [
+        {
+          id: 1,
+          category: "education",
+          icon: "icon-graduation",
+          year: "2021 - present (Expected Graduation Year: 2025)",
+          title: "B.Tech/BE in Computer Science",
+          desc: "Current CGPA: 9.03",
+        },  
+        {
+          id: 2,
+          category: "education",
+          icon: "icon-graduation",
+          year: "2020 - 2021",
+          title: "12th Standard (HSC)",
+          desc: "Maharashtra Board | Score: 93.17%",
+        },
+        
+        {
+          id: 3,
+          category: "education",
+          icon: "icon-graduation",
+          year: "2018 - 2019",
+          title: "10th Standard (SSC)",
+          desc: "Maharashtra Board | Score: 92.60%",
+        },    
+        {
+          id: 4,
+          category: "experience",
+          icon: "icon-briefcase",
+          year: "2023 - present",
+          title: "Web Designsigning",
+          desc: "I am learning React.js form udemy",
+        },
+        {
+          id: 5,
+          category: "experience",
+          icon: "icon-briefcase",
+          year: "2022 - present",
+          title: "Front-End Developer",
+          desc: "I have learned the lagualges such as HTML and CSS from Youtube.",
+        },
+        {
+          id: 6,
+          category: "experience",
+          icon: "icon-briefcase",
+          year: "2022 - 2022",
+          title: "Biginar Fulstack developer",
+          desc: "I have completed Fulstack developer cource form Simplilearn,which was biginar level cource",
+        },
+      ];
 
   return (
-    <div>
-         <Box sx={{ width: '100%' }}>
-      <Stepper activeStep={1} alternativeLabel>
-        {MainSteps.map((label) => (
-          <Step key={label}>
-            <StepLabel>{label}</StepLabel>
-          </Step>
-        ))}
-      </Stepper>
-    </Box>
-    <Box sx={{ maxWidth: 600 }}>
-      <Stepper activeStep={activeStep} orientation="vertical">
-        {steps.map((step, index) => (
-          <Step  key={step.label}>
-            <StepLabel
-              optional={
-                index === 2 ? (
-                  <Typography variant="caption">Last step</Typography>
-                ) : null
-              }
-            >
-              {step.label}
-            </StepLabel>
-            <StepContent>
-              <Typography>{step.description}</Typography>
-              <Box sx={{ mb: 1 }}>
-                <div>
-                  <Button
-                    variant="contained"
-                    onClick={handleNext}
-                    sx={{ mt: 1, mr: 1 }}
-                  >
-                    {index === steps.length - 1 ? 'Finish' : 'Continue'}
-                  </Button>
-                  <Button
-                    disabled={index === 0}
-                    onClick={handleBack}
-                    sx={{ mt: 1, mr: 1 }}
-                  >
-                    Back
-                  </Button>
-                </div>
-              </Box>
-            </StepContent>
-          </Step>
-        ))}
-      </Stepper>
-      {activeStep === steps.length && (
-        <Paper square elevation={0} sx={{ p: 3 }}>
-          <Typography>All steps completed - you&apos;re finished</Typography>
-          <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-            Reset
-          </Button>
-        </Paper>
-      )}
-    </Box>
+   <div id="Education">
+    <div  className="Edu">
+            <h2 className="edu-title">Education</h2>
+            <section className="Education container section">
+        <div className="Education__container grid">
+
+            <div className="timeline grid"> 
+            <h4>Education</h4>
+           {Data.map((val, id)=> {
+            if(val.category === "education"){
+                return (
+                    <Card key={id} icon={val.icon} title={val.title} year={val.year} desc={val.desc}/>
+                );
+            }
+            return null;
+           })}
+
+
+            </div>
+           
+
+            <div className="timeline grid"> 
+            <h4>Other cources</h4>
+           {Data.map((val,index)=> {
+            if(val.category==="experience"){
+                return (
+                    <Card key={index} icon={val.icon} title={val.title} year={val.year} desc={val.desc}/>
+
+                );
+            }
+            return null;
+           })}
+            </div>
+        </div>
+      </section>
+       
+    </div>
     </div>
   );
 }

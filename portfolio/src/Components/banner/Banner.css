@@ -27,6 +27,8 @@
     font-size: 1.30rem;
 }
 
+.tagline{
+  background-image: linear-gradient(to right top, #d16ba5, #a05d95, #734f7e, #4c3f62, #2d2d43, #292c46, #252b4a, #1f2a4d, #353875, #59439c, #8848be, #bf45d9);}
 .banner h1 { 
     font-size: 3rem;
     letter-spacing: 0.05rem; 

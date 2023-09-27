@@ -1,18 +1,99 @@
 .Edu{
-    width :80%;
+
     align-items: center;
-    margin: 10%;
     text-align: center;
+    padding: 5%;
+} 
+
+.edu-title{
+    font-weight: 800;
+    padding: 5px 10px; 
+    width: 80%;
+    margin-left: 10%;
+   
+    border: 2px solid white; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+    
+   
 }
 
-.Edu-detail{
-    width :80%;
-    align-items: center;
-    margin: 10%;
-    text-align: center;
+
+
+.Education__container {
+
+   display: flex;   
+   border: 2px solid white; 
+   border-radius: 10px; 
+   box-shadow: 0 0 0.25rem rgba(255, 255, 255, 0.5); 
+   
+ 
 }
 
-.TabPanel {
-    color: black;
+.timeline{
+    
+    padding: 2rem;
+    margin: 2%;
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.549); /* Add a shadow */
+    
+}
+.timeline h4{
+    
+    
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* White shadow */
+      
+    
+}
+
+.timeline__item{
+    position: relative;
+    padding-left: 3.125rem;
+    padding-bottom: 3.125rem; 
+}
+
+.timeline__item:last-child {
+   
+    padding-bottom: 0;
+}
+
+.timeline__item::before {
+   
+    content :'';
+    width:1px;
+    height: 100%;
+    background-color: var(--first-color);
+    position: absolute;
+    left:.25rem;
+    top:0;
 
 }
+
+.timeline .icon-briefcase,
+.timeline .icon-graduation{
+    position:absolute;
+    left: -0.5rem;
+    top:0;
+    color:red;
+    background-color: black;
+    padding:0.4375rem 0;
+    font-size: var(--h2-font-size);
+    
+}
+
+ 
+.timeline__date{
+    color: #8b888b;
+    font-size: var(--small-font-size);
+
+}
+.timeline__title{
+    font-size: var(--h3-font-size);
+    margin:0;
+
+}
+/*
+.timeline__text{
+
+} */

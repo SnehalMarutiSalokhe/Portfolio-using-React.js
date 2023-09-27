@@ -29,10 +29,9 @@ const Skills = () => {
   };
 
   return (
-    <div>
-      <section className="skill">
-        <Container>
-          
+    <div id ="Skills">
+      <section className="skill" >
+        <Container>          
           <img
             className="background-image-right"
             src={colorSharp}
@@ -43,7 +42,6 @@ const Skills = () => {
             <Col>
               <div className="skill-bx wow zoomIn">
                 <h2>Skills</h2>
-
                 <p>
                   I possess a strong proficiency in programming, particularly
                   in C++ and C, where I have earned recognition with a Golden
@@ -81,7 +79,6 @@ const Skills = () => {
           </Row>
         </Container>
       </section>
-      {/* <img className="background-image-left" src={colorSharp} alt="colorsharp" /> */}
     </div>
   );
 };

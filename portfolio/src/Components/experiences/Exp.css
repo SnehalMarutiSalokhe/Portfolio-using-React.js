@@ -1,8 +1,9 @@
 
 .Exp-container{
-    top: 20%;
-    padding: 10%;
-}
+    height:100%;
+   
+    
+} 
 
 
 .Exp-image-left {
@@ -16,18 +17,53 @@
  }
  
 .Exp{
-    width :80%;
     align-items: center;
-    margin: 10%;
+    width:80%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
      z-index: 1;
+    
 }
 
 .Exp-detail{
-    width :60%;
+    
+    width :50%;
     align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-    padding-bottom: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center; 
+    justify-items: center;
+    border-radius: 1%;
+    background-image: linear-gradient(to bottom, #ff00ff, #fe48fe, #fd67fd, #fb80fb, #f995f9, #f190f7, #e98cf4, #e187f2, #cd69f1, #b34cf2, #932df5, #6500f8);
+}
+
+.app-bar{    
+    background-image: linear-gradient(to right top, #ff00e9, #db00eb, #b200ec, #8100ec, #3212eb);    border-radius: 3%;
+    margin:0.2rem;
+    /* justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important; */
  }
+
+.nav-link-pill{
+    color:#82c5d1 !important;
+    margin:0.2rem;
+    margin-left: 2rem;
+    text-align: center !important;
+
+}
+
+.nav-link-pill.active {
+      background-image: linear-gradient(to bottom, #a5ddc9, #8fd2ce, #82c5d1, #7fb6d0, #84a7ca, #83a7ce, #83a7d3, #84a7d7, #71b9ea, #54ccf8, #2fdefe, #02f0fc) !important; 
+    color: white !important; 
+  }
+
+  
+.Exp_detail-tab{
+        padding: 5%;
+       
+}
+
+
+

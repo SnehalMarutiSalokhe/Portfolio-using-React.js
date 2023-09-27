@@ -23,10 +23,11 @@ background:green;
       width: 8%;
   }
 
-  .ms-auto{
+  /* .ms-auto{
     /* background:white; */
-    margin-right: 10%;
-  }
+    /* margin-right: 10%; */
+ /* } 
+  */
   nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 500;
     color: #fff !important;

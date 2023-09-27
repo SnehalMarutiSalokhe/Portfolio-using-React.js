@@ -88,16 +88,12 @@ import "./Banner.css";
                  <span className="tagline">Welcome to my Portfolio</span>
                  <h1>{`Hi I'm Snehal `} <span className="wrap">{text}</span></h1>
                  <p>
-                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   Dolorem eligendi fugiat officiis harum quidem. Aliquam in ullam
-                   esse, voluptatibus excepturi soluta ex, dolores nemo doloribus
-                   corporis quam necessitatibus eveniet. Odio.
+                I'm a passionate CSE student with expertise in web development using React.js. My proficiency in problem-solving and strong command of C++ enable me to create innovative and efficient solutions for a wide range of challenges in the digital world. Explore my projects and experience to discover how I can bring creativity and technical excellence to your next endeavor.
                  </p>
                </div>
-               <button onClick={() => console.log('connect')}> {`Let's Connect`}<ArrowCircleRightIcon size={25} /></button>
+               <button onClick={() => console.log('connect')}> {`Hire Me`}<ArrowCircleRightIcon size={25} /></button>
              </Col>
              <Col xs={12} md={6} xl={5}>
-               {/* <img src={Rocket} alt="Rocket" /> */}
                <img src={GirlProgrammer} alt="Header Img" />
              </Col>
            </Row>
