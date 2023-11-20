@@ -1,16 +1,16 @@
+import React from "react";
 import "./Skills.css";
 import { Container, Col, Row } from "react-bootstrap";
-import meter1 from "../../assets/img/meter1.svg";
-import meter2 from "../../assets/img/meter2.svg";
-import meter3 from "../../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../../assets/img/color-sharp2.png";
+import meter1 from "../../assets/img/meter1.svg";
+import meter2 from "../../assets/img/meter2.svg";
+import meter3 from "../../assets/img/meter3.svg";
 
 const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -29,13 +29,13 @@ const Skills = () => {
   };
 
   return (
-    <div id ="Skills">
-      <section className="skill" >
-        <Container>          
+    <div id="Skills">
+      <section className="skill">
+        <Container>
           <img
             className="background-image-right"
             src={colorSharp}
-            alt="arroimg"
+            alt="arrowimg"
           />
 
           <Row>
@@ -49,7 +49,7 @@ const Skills = () => {
                   problem-solving and hold a solid foundation in computer
                   science fundamentals. Additionally, I am skilled in web
                   development, with expertise in React.js, enabling me to create
-                  responsive and user-friendly web applications. 
+                  responsive and user-friendly web applications.
                 </p>
                 <Carousel
                   responsive={responsive}
@@ -62,16 +62,15 @@ const Skills = () => {
                   </div>
                   <div className="item">
                     <img src={meter2} alt="skillMtr" />
-                    <h5>Competative Programming</h5>
+                    <h5>Competitive Programming</h5>
                   </div>
                   <div className="item">
                     <img src={meter3} alt="skillMtr" />
-                    <h5>computer science fundamentals</h5>
+                    <h5>Computer Science Fundamentals</h5>
                   </div>
-
                   <div className="item">
                     <img src={meter1} alt="skillMtr" />
-                    <h5>Technical Content Writting</h5>
+                    <h5>Technical Content Writing</h5>
                   </div>
                 </Carousel>
               </div>
@@ -82,4 +81,5 @@ const Skills = () => {
     </div>
   );
 };
+
 export default Skills;

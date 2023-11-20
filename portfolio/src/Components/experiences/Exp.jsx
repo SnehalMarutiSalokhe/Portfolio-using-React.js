@@ -5,21 +5,21 @@ import colorSharp from "../../assets/img/color-sharp.png";
 import Tab from "react-bootstrap/Tab";
 import Nav from "react-bootstrap/Nav";
 
-const titleColor = "White";
+const titleColor = "white";
 const descriptionColor = "gray";
 
 export default function Exp() {
   const [value, setValue] = useState("0");
 
-  const handleChange = (key: string) => {
+  const handleChange = (key) => {
     setValue(key);
   };
 
   return (
     <div id="Experience">
       <div className="Exp-container">
-      <h2>Experience</h2>
-        <div className="Exp" >
+        <h2>Experience</h2>
+        <div className="Exp">
           <Steps current={2} percent={60}>
             <Steps.Step
               title={<span style={{ color: titleColor }}>Content Writer</span>}
@@ -28,24 +28,21 @@ export default function Exp() {
               }
             />
             <Steps.Step
-              title={<span style={{ color: titleColor }}>Web developer</span>}
+              title={<span style={{ color: titleColor }}>Web Developer</span>}
               description={
                 <span style={{ color: descriptionColor }}>CodeClause</span>
               }
             />
             <Steps.Step
-              title={
-                <span style={{ color: titleColor }}>Software trainee</span>
-              }
+              title={<span style={{ color: titleColor }}>Software Trainee</span>}
               description={
                 <span style={{ color: descriptionColor }}>
-                  Collab Vison Infosolution
+                  Collab Vision Infosolution
                 </span>
               }
             />
           </Steps>
-          <img className="Exp-image-left" src={colorSharp} alt="colorsharp" />
-
+          <img className="Exp-image-left" src={colorSharp} alt="Colorful Sharp Logo" />
         </div>
 
         <div className="Exp-detail">
@@ -53,7 +50,6 @@ export default function Exp() {
             activeKey={value}
             onSelect={(key) => handleChange(key)}
           >
-          
             <div className="app-bar">
               <Nav variant="pills" className="mb-3">
                 <Nav.Item>
@@ -83,7 +79,7 @@ export default function Exp() {
                     <big>
                       <u>Skill:</u>
                     </big>{" "}
-                    Computer science Fundamentals
+                    Computer Science Fundamentals
                   </p>
                   <p>
                     During this time period, I wrote some articles for the
@@ -122,7 +118,6 @@ export default function Exp() {
             </Tab.Content>
           </Tab.Container>
         </div>
-
       </div>
     </div>
   );

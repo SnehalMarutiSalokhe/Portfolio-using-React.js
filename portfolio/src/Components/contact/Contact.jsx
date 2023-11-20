@@ -20,6 +20,10 @@ export const contact = () => {
             [category]:value
         })
     }
+
+    const handleSubmit =()=>{
+        
+    }
   return (
     <div>
       <section className="contact" id="connect">
@@ -30,7 +34,7 @@ export const contact = () => {
                 </Col>
                 <Col md ={6}>
                     <h2>Get In Touch</h2>
-                    <form action="">
+                    <form onSubmit={handleSubmit} >
                         <Row>
                             <Col sm={6} ClassName="px-1">
                                 <input type="text" vlaue={formDtails.firstName} placeholder="First Name" onChange= {(e) =>onFormUpdate('firstName',e.target.value)} />
@@ -48,6 +52,13 @@ export const contact = () => {
                                 <textarea  row="6" vlaue={formDtails.message} placeholder="Message" onChange= {(e) =>onFormUpdate('message',e.target.value)}> < textarea/>
                                 <button type="submit"> <span> {buttonText}</span> </button>
                             </Col>
+                            {
+                                status.message &&
+                                <Col>
+                                  <p ClassName = {status.success === false ? "danger" : "succes"}> {status.message}</p>
+
+                                </Col>
+                            }
                         </Row>
                     </form>
                 </Col>
