@@ -1,7 +1,7 @@
 import "./Exp.css";
 import { Steps } from "antd";
 import colorSharp from "../../assets/img/color-sharp.png";
-import Experiences from "./Experiences";
+// import Experiences from "./Experiences";
 
 
 const titleColor = "white";
@@ -47,7 +47,7 @@ export default function Exp() {
         </div>
 
         <div className="Exp-detail">
-        <Experiences/>
+        {/* <Experiences/> */}
 
         </div> 
       </div>

@@ -3,7 +3,7 @@
 .project {
   padding: 80px 0;
   position: relative;
-  /* background-color: black; */
+  background-color: black;
 }
 .project h2 {
 	font-size: 45px;
@@ -130,3 +130,5 @@
     list-style: none;
     text-decoration: none;
   }
+
+  

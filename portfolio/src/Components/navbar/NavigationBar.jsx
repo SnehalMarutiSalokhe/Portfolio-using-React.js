@@ -43,8 +43,8 @@ export const NavigationBar = () => {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
+            <span className="navbar-toggler-icon"></span>
+          </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
