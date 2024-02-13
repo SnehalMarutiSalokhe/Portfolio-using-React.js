@@ -12,6 +12,7 @@ import Banner from "./Components/banner/Banner";
 import Skills from "./Components/skills/Skills";
 import Edu from "./Components/education/Edu";
 import Exp from "./Components/experiences/Exp";
+import Projects from "./Components/projects/Projects";
 import Resume from "./Components/education/Resume";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
     <NavigationBar/>
     <GoToTop/>
     <Banner/>
-    <Skills/>  
+    <Skills/>     
+    <Projects/>
     <Edu/>
     <Exp/>
     <Resume/>

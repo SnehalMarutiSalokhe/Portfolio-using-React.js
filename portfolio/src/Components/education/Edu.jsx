@@ -58,7 +58,7 @@ export default function Edu() {
     return (
         <div id="Education">
             <div className="Edu">
-                <h2 className="edu-title">Education</h2>
+                <h2 >Education</h2>
                 <section className="Education container section">
                     <div className="Education__container grid">
                         <div className="timeline grid"> 
