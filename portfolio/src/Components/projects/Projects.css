@@ -129,6 +129,8 @@
   .proj-imgbx a{
     list-style: none;
     text-decoration: none;
+    color: rgb(224, 215, 148);
+    text-decoration: underline;
   }
 
   

@@ -4,11 +4,35 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../../assets/img/project-img1.png";
 import projImg2 from "../../assets/img/project-img2.png";
 import projImg3 from "../../assets/img/project-img3.png";
+import picPerfectorImg from "../../assets/img/pic-perfector-img.png";
+import collegeLevelDiscussionForum from "../../assets/img/college-level-discussion-forum-img.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import "./Projects.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
+
+  const projects1 = [
+    {
+      title: "PICPERFECTOR",
+      description: "Next.js | MongoDB | TypeScript | Tailwind CSS",
+      imgUrl: picPerfectorImg,
+      link: "https://pic-perfector-dusky.vercel.app/",
+    },
+    {
+      title: "College Level Discussion Forum",
+      description: "MongoDB||Express.js||React.js||Node.js||socket.io",
+      imgUrl: collegeLevelDiscussionForum,
+      link: "https://college-level-discussion-forum.vercel.app",
+    },
+    {
+      title: "Tic-Tac-Toe",
+      description: "Used -> React.js|Tailwind CSS|MUI",
+      imgUrl: projImg3,
+      link: "https://tic-tac-toe-game-using-reactjs.vercel.app",
+    },
+  ];
+
   const projects = [
     {
       title: "THE ALMOST FINAL COUNTDOWN",
@@ -30,6 +54,7 @@ export const Projects = () => {
     },
   ];
 
+  
   return (
     <section className="project" id="projects">
       <Container>
@@ -51,6 +76,7 @@ export const Projects = () => {
                     combination of React.js for frontend logic, Tailwind CSS for
                     styling, and Material UI (MUI) for component design.
                   </p>
+
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -67,6 +93,8 @@ export const Projects = () => {
                         <Nav.Link eventKey="third">Tab 3</Nav.Link>
                       </Nav.Item>
                     </Nav>
+
+
                     <Tab.Content
                       id="slideInUp"
                       className={
@@ -75,20 +103,20 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
+                          {projects1.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
+
+
+                      <Tab.Pane eventKey="second">
+                         <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>   
                       <Tab.Pane eventKey="third">
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing

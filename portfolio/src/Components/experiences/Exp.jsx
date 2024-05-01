@@ -15,7 +15,7 @@ export default function Exp() {
       <div className="Exp-container">
       <h2>Experience</h2>
         <div className="Exp">
-          <Steps current={2} percent={60}>
+          <Steps current={3} >
             <Steps.Step
               title={<span style={{ color: titleColor }}>Content Writer</span>}
               description={
