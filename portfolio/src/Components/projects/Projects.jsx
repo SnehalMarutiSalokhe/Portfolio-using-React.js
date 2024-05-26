@@ -28,7 +28,7 @@ export const Projects = () => {
     },
     {
       title: "Cource App Dashboard",
-      description: "Used -> React.js|Tailwind CSS|MUI",
+      description: "React.js|Tailwind CSS|MUI",
       imgUrl: courceDashboard,
       link: "https://alemeno-assignment-orcin.vercel.app/",
     },
