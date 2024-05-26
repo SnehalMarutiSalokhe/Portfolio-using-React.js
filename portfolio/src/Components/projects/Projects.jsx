@@ -6,6 +6,7 @@ import projImg2 from "../../assets/img/project-img2.png";
 import projImg3 from "../../assets/img/project-img3.png";
 import picPerfectorImg from "../../assets/img/pic-perfector-img.png";
 import collegeLevelDiscussionForum from "../../assets/img/college-level-discussion-forum-img.png";
+import courceDashboard from "../../assets/img/courceDashboard.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import "./Projects.css";
 import TrackVisibility from "react-on-screen";
@@ -26,10 +27,10 @@ export const Projects = () => {
       link: "https://college-level-discussion-forum.vercel.app",
     },
     {
-      title: "Tic-Tac-Toe",
+      title: "Cource App Dashboard",
       description: "Used -> React.js|Tailwind CSS|MUI",
-      imgUrl: projImg3,
-      link: "https://tic-tac-toe-game-using-reactjs.vercel.app",
+      imgUrl: courceDashboard,
+      link: "https://alemeno-assignment-orcin.vercel.app/",
     },
   ];
 
