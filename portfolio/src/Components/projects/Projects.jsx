@@ -1,7 +1,7 @@
-
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../../assets/img/project-img1.png";
+import health from "../../assets/img/health.jpeg";
+import projImg1s from "../../assets/img/project-img1s.png";
 import projImg2 from "../../assets/img/project-img2.png";
 import projImg3 from "../../assets/img/project-img3.png";
 import picPerfectorImg from "../../assets/img/pic-perfector-img.png";
@@ -12,11 +12,10 @@ import "./Projects.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-
   const projects1 = [
     {
       title: "PICPERFECTOR",
-      description: "Next.js | MongoDB | TypeScript | Tailwind CSS",
+      description: "Next.js || MongoDB || TypeScript || Tailwind CSS",
       imgUrl: picPerfectorImg,
       link: "https://pic-perfector-dusky.vercel.app/",
     },
@@ -27,19 +26,19 @@ export const Projects = () => {
       link: "https://college-level-discussion-forum.vercel.app",
     },
     {
-      title: "Cource App Dashboard",
-      description: "React.js|Tailwind CSS|MUI",
-      imgUrl: courceDashboard,
-      link: "https://alemeno-assignment-orcin.vercel.app/",
+      title: "THE ALMOST FINAL COUNTDOWN",
+      description: "React.js || Tailwind CSS || MUI",
+      imgUrl: projImg1s,
+      link: "https://the-almost-final-countdown-by-react.vercel.app",
     },
   ];
 
   const projects = [
     {
-      title: "THE ALMOST FINAL COUNTDOWN",
-      description: "Used -> React.js|Tailwind CSS|MUI",
-      imgUrl: projImg1,
-      link: "https://the-almost-final-countdown-by-react.vercel.app",
+      title: "Cource App Dashboard",
+      description: "React.js|Tailwind CSS|MUI",
+      imgUrl: courceDashboard,
+      link: "https://alemeno-assignment-orcin.vercel.app/",
     },
     {
       title: "Investment Calculator",
@@ -54,8 +53,15 @@ export const Projects = () => {
       link: "https://tic-tac-toe-game-using-reactjs.vercel.app",
     },
   ];
+  const Easyprojects = [
+    {
+      title: "Health Tracking System",
+      description: "c++",
+      imgUrl: health,
+      link: "https://github.com/SnehalMarutiSalokhe/health-tracking-system",
+    },
+  ];
 
-  
   return (
     <section className="project" id="projects">
       <Container>
@@ -70,13 +76,33 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    This section showcases various projects developed using
-                    React.js, Tailwind CSS, and Material UI (MUI). Tab 1
-                    contains low-level projects, demonstrating foundational
-                    concepts of web development. These projects are built with a
-                    combination of React.js for frontend logic, Tailwind CSS for
-                    styling, and Material UI (MUI) for component design.
+                    This section showcases various projects developed using MERN
+                    stack, Next.js, React.js, Tailwind CSS, and Material UI
+                    (MUI) and C++.
                   </p>
+
+                  <ul
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      padding: 0,
+                      listStyle: "none",
+                    }}
+                  >
+                    <li style={{ marginBottom: "10px" }}>
+                      Tab 1 contains projects using advanced technologies like
+                      Next.js, React.js and MongoDB.
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      Tab 2 features projects utilizing React.js and Tailwind CSS.
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      Tab 3 includes simpler projects such as a health tracking
+                      system in C++.
+                    </li>
+                  </ul>
+                  {/* =========================tabs========================== */}
 
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -95,6 +121,7 @@ export const Projects = () => {
                       </Nav.Item>
                     </Nav>
 
+                    {/* =========================first========================== */}
 
                     <Tab.Content
                       id="slideInUp"
@@ -110,22 +137,24 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
 
+                      {/* =========================second========================== */}
 
                       <Tab.Pane eventKey="second">
-                         <Row>
+                        <Row>
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
-                      </Tab.Pane>   
+                      </Tab.Pane>
+
+                      {/* =========================third========================== */}
+
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {Easyprojects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
